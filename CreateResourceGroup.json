@@ -3,10 +3,13 @@
   "contentVersion": "1.0.0.1",
   "parameters": {
     "rgName": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "testRG"
+
     },
     "rgLocation": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "westeurope"
     }
   },
   "variables": {},
