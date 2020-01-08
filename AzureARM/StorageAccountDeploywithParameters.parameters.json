@@ -3,9 +3,8 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "storageAccountName": {
-            "value": "GEN-UNIQUE",
-            "defaultValue": "[concat('site', uniqueString(resourceGroup().id))]"
-        },
+            "value": "GEN-UNIQUE"
+         },
     "storageSKU": {
     "type": "string",
     "allowedValues": [

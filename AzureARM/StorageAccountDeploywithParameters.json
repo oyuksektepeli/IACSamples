@@ -18,6 +18,7 @@
       },
       "storageAccountName" : {
         "type" : "string",
+        "defaultValue": "[concat('site', uniqueString(resourceGroup().id))]",
         "metadata" : {
             "description" : "Storage Account Name"
         }
