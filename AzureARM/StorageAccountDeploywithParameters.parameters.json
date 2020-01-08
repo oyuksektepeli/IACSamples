@@ -4,10 +4,8 @@
     "parameters": {
         "storageAccountName": {
             "value": "GEN-UNIQUE",
-            "type" : "string",
-            "metadata": {
-              "description": "The name of Storage Account"
-            }
+            "type" : "string"
+            
          },
     "storageSKU": {
     "type": "string",
@@ -18,10 +16,8 @@
       "Standard_RAGRS",
       "Premium_LRS"
     ],
-    "defaultValue": "Standard_LRS",
-    "metadata": {
-      "description": "The type of replication to use for the storage account."
-    }
+    "defaultValue": "Standard_LRS"
+    
   }
         
 }
