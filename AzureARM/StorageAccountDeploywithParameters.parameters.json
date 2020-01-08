@@ -15,9 +15,7 @@
       "Standard_GRS",
       "Standard_RAGRS",
       "Premium_LRS"
-    ],
-    "defaultValue": "Standard_LRS"
-    
+    ]    
   }
         
 }
