@@ -3,7 +3,12 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "storageAccountName": {
-            "value": "GEN-UNIQUE"
+            "value": "GEN-UNIQUE",
+            "type" : "string",
+            "defaultValue": "[concat('site', uniqueString(resourceGroup().id))]",
+            "metadata": {
+              "description" : "The name of Storage Account"
+            }
          },
     "storageSKU": {
     "type": "string",
