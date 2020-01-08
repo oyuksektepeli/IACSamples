@@ -1,0 +1,1 @@
+az deployment create --name ncdevosp101 --location westeurope --template-uri https://raw.githubusercontent.com/oyuksektepeli/IACSamples/master/AzureARM/CreateResourceGroup.json --parameters rgName=nc-devops101-rg rgLocation=westeurope
