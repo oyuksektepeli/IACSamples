@@ -1,1 +1,1 @@
-az group deployment create --name ncdevops101 --resource-group nc-devops101-rg --template-uri "https://raw.githubusercontent.com/oyuksektepeli/IACSamples/master/AzureARM/StorageAccountDeploy.json" --parameters storageAccountType=Standard_LRS
+az group deployment create --name ncdevops101 --resource-group nc-devops101-rg --template-uri "https://raw.githubusercontent.com/oyuksektepeli/IACSamples/master/AzureARM/StorageAccountDeploy.json" --parameters https://raw.githubusercontent.com/oyuksektepeli/IACSamples/master/AzureARM/StorageAccountDeploywithParameters.parameters.json

@@ -2,15 +2,9 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-      "storageAccountType": {
+      "storageSKU": {
         "type": "string",
         "defaultValue": "Standard_LRS",
-        "allowedValues": [
-          "Standard_LRS",
-          "Standard_GRS",
-          "Standard_ZRS",
-          "Premium_LRS"
-        ],
         "metadata": {
           "description": "Storage Account type"
         }
@@ -22,12 +16,13 @@
           "description": "Location for all resources."
         }
       },
-      "storageAccountName": {
+      "storageAccountName" : {
         "type" : "string",
         "metadata" : {
-            "description" :"Specifies the name of the blob container."
+            "description" : "Storage Account Name"
         }
       }
+      
     },
     "variables": {
       
@@ -39,7 +34,7 @@
         "location": "[parameters('location')]",
         "apiVersion": "2018-07-01",
         "sku": {
-          "name": "[parameters('storageAccountType')]"
+          "name": "[parameters('storageSKU')]"
         },
         "kind": "StorageV2",
         "properties": {}
