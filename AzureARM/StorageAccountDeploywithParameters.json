@@ -18,7 +18,6 @@
       },
       "storageAccountName" : {
         "type" : "string",
-        
         "metadata" : {
             "description" : "Storage Account Name"
         }
