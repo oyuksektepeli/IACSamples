@@ -6,7 +6,7 @@
             "value": "GEN-UNIQUE",
             "type" : "string",
             "metadata": {
-              "description" : "The name of Storage Account"
+              "description": "The name of Storage Account"
             }
          },
     "storageSKU": {
