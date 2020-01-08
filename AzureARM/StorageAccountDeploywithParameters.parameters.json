@@ -5,7 +5,7 @@
         "storageAccountName": {
             "value": "GEN-UNIQUE",
             "type" : "string",
-            "defaultValue": "[concat('site', uniqueString(resourceGroup().id))]",
+            "defaultValue": "[concat('storage', uniqueString(resourceGroup().id))]",
             "metadata": {
               "description" : "The name of Storage Account"
             }
